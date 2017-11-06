@@ -16,7 +16,7 @@ namespace Wheny.Core
         /// <returns></returns>
         public static string GetDescription(this Enum e)
         {
-            var attributes = (DescriptionAttribute[])e.GetType().GetField(e.ToString()).GetCustomAttributes(typeof(DescriptionAttribute), false);
+            var attributes = (DescriptionAttribute[])e.GetType().GetMember(e.ToString()).FirstOrDefault().GetCustomAttributes(typeof(DescriptionAttribute), false);
             if (attributes.Count() > 0)
             {
                 return attributes.First().Description;
