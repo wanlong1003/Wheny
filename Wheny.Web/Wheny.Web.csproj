@@ -104,6 +104,9 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Scripts\Extensions\Array.Extension.js" />
+    <Content Include="Config\log4net.config" />
+    <Content Include="Config\appSettings.config" />
+    <Content Include="Config\connectionStrings.config" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Scripts\Extensions\Date.Extension.js" />
     <Content Include="Scripts\Extensions\String.Extension.js" />
@@ -114,6 +117,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Global.asax.cs">

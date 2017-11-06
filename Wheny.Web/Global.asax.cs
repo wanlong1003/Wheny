@@ -17,7 +17,22 @@ namespace Wheny.Web
             // 在应用程序启动时运行的代码
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
-            RouteConfig.RegisterRoutes(RouteTable.Routes);            
+            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
+
+            //移除多余的视图引擎
+            for (var i = 0; i < ViewEngines.Engines.Count;)
+            {
+                if (ViewEngines.Engines[i] is RazorViewEngine)
+                {
+                    i++;
+                }
+                else
+                {
+                    ViewEngines.Engines.RemoveAt(i);
+                }
+            }
+
         }
     }
 }
