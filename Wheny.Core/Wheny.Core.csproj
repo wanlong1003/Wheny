@@ -48,11 +48,13 @@
     <Compile Include="Encryptor\SHA256Encryptor.cs" />
     <Compile Include="Extensions\DateTimeExtension.cs" />
     <Compile Include="Extensions\EnumExtension.cs" />
-    <Compile Include="Extensions\ObjectExtension.cs" />
+    <Compile Include="Extensions\JsonExtension.cs" />
     <Compile Include="Extensions\StringExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Utilities\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
