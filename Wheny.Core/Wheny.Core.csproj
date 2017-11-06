@@ -47,13 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Extensions\AssemblyExtension.cs" />
     <Compile Include="Encryptor\DESEncryptor.cs" />
+    <Compile Include="Extensions\AssemblyExtension.cs" />
     <Compile Include="Encryptor\MD5Encryptor.cs" />
     <Compile Include="Encryptor\SHA256Encryptor.cs" />
     <Compile Include="Extensions\DateTimeExtension.cs" />
     <Compile Include="Extensions\EnumExtension.cs" />
     <Compile Include="Extensions\JsonExtension.cs" />
+    <Compile Include="Extensions\ObjectExtension.cs" />
     <Compile Include="Extensions\StringExtension.cs" />
     <Compile Include="Singleton.cs" />
     <Compile Include="Utilities\Log.cs" />
