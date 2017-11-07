@@ -7,18 +7,18 @@
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
-        public static string JsonSerialize(this object sender)
+        public static string ToJson(this object sender)
         {
             return Newtonsoft.Json.JsonConvert.SerializeObject(sender);
         }
 
         /// <summary>
-        /// Json字符串反序列化
+        /// Json字符串反序列化为指定定向实例
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="sender"></param>
         /// <returns></returns>
-        public static T JsonDeserialize<T>(this string sender)
+        public static T JsonTo<T>(this string sender)
         {
             return Newtonsoft.Json.JsonConvert.DeserializeObject<T>(sender);
         }
