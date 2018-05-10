@@ -57,6 +57,7 @@
     <Compile Include="Extensions\ObjectExtension.cs" />
     <Compile Include="Extensions\StringExtension.cs" />
     <Compile Include="Singleton.cs" />
+    <Compile Include="Utilities\Encryptor.cs" />
     <Compile Include="Utilities\Log.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValidateCoder.cs" />
