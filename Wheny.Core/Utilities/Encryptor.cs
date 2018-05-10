@@ -6,7 +6,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Wheny.Core.Utilities
+namespace Wheny.Core
 {
     public static class Encryptor
     {
