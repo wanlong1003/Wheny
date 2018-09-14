@@ -7,7 +7,7 @@
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
-        public static string ToJson(this object sender)
+        public static string ToJson<T>(this T sender)
         {
             return Newtonsoft.Json.JsonConvert.SerializeObject(sender);
         }

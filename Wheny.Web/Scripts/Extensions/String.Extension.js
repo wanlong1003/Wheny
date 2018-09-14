@@ -1,1 +1,3 @@
-﻿
+﻿(function (String) {
+
+})(window.String);
